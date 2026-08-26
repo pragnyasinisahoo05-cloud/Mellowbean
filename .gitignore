@@ -1,0 +1,6 @@
+node_modules/
+.env
+mellowbean.db
+*.db
+*.db-shm
+*.db-wal
