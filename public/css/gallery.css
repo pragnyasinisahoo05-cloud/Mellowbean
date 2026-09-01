@@ -11,6 +11,7 @@
     color: #a66b32;
     font-weight: 700;
     letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 .gallery-header h1 {
@@ -31,12 +32,17 @@
 
 
 /* =========================
-   GALLERY GRID
+   GALLERY SECTION
 ========================= */
 
 .gallery-section {
-    padding: 30px 8% 90px;
+    padding: 20px 8% 100px;
 }
+
+
+/* =========================
+   GALLERY GRID
+========================= */
 
 .gallery-grid {
     display: grid;
@@ -44,22 +50,78 @@
     gap: 25px;
 }
 
+
+/* =========================
+   GALLERY ITEM
+========================= */
+
 .gallery-item {
-    height: 280px;
-    background: #222;
+    height: 300px;
     border-radius: 20px;
+    overflow: hidden;
+    background: #1b1b1b;
+    position: relative;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    font-size: 5rem;
+/* =========================
+   GALLERY IMAGE
+========================= */
 
-    transition: 0.3s;
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.08);
 }
 
 .gallery-item:hover {
-    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .gallery-header {
+        padding: 80px 5% 50px;
+    }
+
+    .gallery-header h1 {
+        font-size: 3.2rem;
+    }
+
+    .gallery-section {
+        padding: 20px 5% 80px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-item {
+        height: 280px;
+    }
 }
 
 
@@ -70,15 +132,17 @@
 @media (max-width: 700px) {
 
     .gallery-header {
-        padding: 70px 5% 40px;
+        padding: 60px 5% 40px;
     }
 
     .gallery-header h1 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .gallery-intro {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
     .gallery-section {
@@ -91,7 +155,23 @@
     }
 
     .gallery-item {
-        height: 240px;
+        height: 260px;
+        border-radius: 18px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .gallery-header h1 {
+        font-size: 2.1rem;
     }
 
+    .gallery-item {
+        height: 230px;
+    }
 }
