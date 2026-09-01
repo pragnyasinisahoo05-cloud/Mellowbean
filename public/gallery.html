@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Mellow Bean Café</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ☕ <span>Mellow Bean</span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <a href="reservation.html" class="reserve-btn">
+            Reserve Table
+        </a>
+
+        <button class="menu-toggle"
+            onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- GALLERY HEADER -->
+
+    <section class="gallery-header">
+
+        <p>OUR GALLERY</p>
+
+        <h1>
+            Moments at
+            <span>Mellow Bean</span>
+        </h1>
+
+        <p class="gallery-intro">
+            A little glimpse of our coffee, food and cozy café moments.
+        </p>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section class="gallery-section">
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">☕</div>
+
+            <div class="gallery-item">🥐</div>
+
+            <div class="gallery-item">🍰</div>
+
+            <div class="gallery-item">🧋</div>
+
+            <div class="gallery-item">🍪</div>
+
+            <div class="gallery-item">❤️</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Mellow Bean Café</p>
+        <p>Brewing happiness, one cup at a time.</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

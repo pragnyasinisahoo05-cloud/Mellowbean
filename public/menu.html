@@ -1,0 +1,436 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Mellow Bean Café</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Menu CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ☕ Mellow Bean
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="reservation.html">Reservation</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+        <a href="reservation.html" class="reserve-btn">
+            Reserve Table
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            onclick="document.getElementById('navLinks').classList.toggle('active')">
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- MENU HEADER -->
+
+    <section class="menu-header">
+
+        <p>OUR MENU</p>
+
+        <h1>
+            Something Delicious
+            <span>For Everyone</span>
+        </h1>
+
+        <p class="menu-intro">
+            From freshly brewed coffee to delicious desserts,
+            discover something you'll love.
+        </p>
+
+    </section>
+
+
+    <!-- COFFEE -->
+
+    <section class="menu-section">
+
+        <h2>☕ Coffee</h2>
+
+        <div class="menu-grid">
+
+
+            <!-- Cappuccino -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/cappuccino.png"
+                    alt="Cappuccino">
+
+                <h3>Cappuccino</h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Rich espresso with creamy steamed milk.
+                </p>
+
+                <p class="price">
+                    ₹180
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Caramel Latte -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/caramellatte.png"
+                    alt="Caramel Latte">
+
+                <h3>Caramel Latte</h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Smooth latte blended with sweet caramel.
+                </p>
+
+                <p class="price">
+                    ₹220
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Mocha -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/mocha.png"
+                    alt="Mocha">
+
+                <h3>Mocha</h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Espresso, chocolate and creamy milk.
+                </p>
+
+                <p class="price">
+                    ₹210
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BAKERY -->
+
+    <section class="menu-section">
+
+        <p class="section-tag">
+            FRESH FROM THE OVEN
+        </p>
+
+        <h2>🥐 Bakery</h2>
+
+        <div class="menu-grid">
+
+
+            <!-- Butter Croissant -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/Buttercroissant.png"
+                    alt="Butter Croissant">
+
+                <h3>
+                    Butter Croissant
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Freshly baked, buttery and flaky.
+                </p>
+
+                <p class="price">
+                    ₹150
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Chocolate Brownie -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/chocolatebrownie.png"
+                    alt="Chocolate Brownie">
+
+                <h3>
+                    Chocolate Brownie
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Rich, warm and deeply chocolatey.
+                </p>
+
+                <p class="price">
+                    ₹160
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Cheesecake -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/cheesecake.png"
+                    alt="Classic Cheesecake">
+
+                <h3>
+                    Classic Cheesecake
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+                <p class="description">
+                    Creamy cheesecake with a buttery crust.
+                </p>
+
+                <p class="price">
+                    ₹190
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLD DRINKS -->
+
+    <section class="menu-section">
+
+        <h2>🧊 Cold Drinks</h2>
+
+        <div class="menu-grid">
+
+
+            <!-- Cold Coffee -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/coldcoffee.png"
+                    alt="Cold Coffee">
+
+                <h3>
+                    Cold Coffee
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Chilled creamy coffee for a refreshing break.
+                </p>
+
+                <p class="price">
+                    ₹200
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Iced Latte -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/icedlatte.png"
+                    alt="Iced Latte">
+
+                <h3>
+                    Iced Latte
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Smooth espresso served over ice.
+                </p>
+
+                <p class="price">
+                    ₹210
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Berry Frappe -->
+
+            <div class="menu-card">
+
+                <img
+                    src="images/menu/berryfrappe.png"
+                    alt="Berry Frappe">
+
+                <h3>
+                    Berry Frappe
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <p class="description">
+                    Creamy chilled frappe with berry flavours.
+                </p>
+
+                <p class="price">
+                    ₹230
+                </p>
+
+                <a href="reservation.html">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Mellow Bean Café
+        </p>
+
+        <p>
+            Brewing happiness, one cup at a time.
+        </p>
+
+    </footer>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

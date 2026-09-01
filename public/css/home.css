@@ -1,0 +1,831 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 8% 80px;
+    gap: 60px;
+
+    background:
+        #0D0D0D
+        url("../images/hero/hero.jpg")
+        center / cover no-repeat;
+
+    color: white;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 700px;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.tagline {
+    display: inline-block;
+
+    background: #C08B5C;
+    color: white;
+
+    padding: 8px 18px;
+    border-radius: 50px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 4.5rem;
+    line-height: 1.15;
+
+    margin: 0 0 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #F4C27A;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+    max-width: 550px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+
+    padding: 15px 28px;
+    border-radius: 40px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #6F4E37;
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    background: #4D3527;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+}
+
+
+/* =========================================================
+   FEATURED MENU
+========================================================= */
+
+.featured-menu {
+    padding: 100px 8%;
+    background: #111;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    color: #C08B5C;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.8rem;
+
+    color: white;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   MENU GRID
+========================================================= */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   MENU CARDS
+========================================================= */
+
+.menu-card {
+    background: #1B1B1B;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    transition: 0.35s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.menu-card img {
+   
+     width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    background: #222;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+
+.menu-card h3 {
+    margin-top: 20px;
+
+    color: white;
+
+    font-size: 1.4rem;
+}
+
+.menu-card .price {
+    color: #C08B5C;
+
+    font-size: 1.2rem;
+
+    margin: 15px 0;
+
+    font-weight: 600;
+}
+
+.menu-card a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #6F4E37;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    transition: 0.3s ease;
+}
+
+.menu-card a:hover {
+    background: #C08B5C;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-us {
+    padding: 100px 8%;
+    background: #0D0D0D;
+}
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.why-card {
+    background: #1A1A1A;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.why-card h3 {
+    font-size: 1.5rem;
+
+    color: #C08B5C;
+
+    margin-bottom: 20px;
+}
+
+.why-card p {
+    color: #CCCCCC;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GALLERY PREVIEW
+========================================================= */
+
+.gallery-preview {
+    padding: 100px 8%;
+    background: #111111;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-box {
+    height: 280px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #222;
+
+    transition: 0.35s;
+
+    cursor: pointer;
+}
+
+.gallery-box:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.testimonials {
+    padding: 100px 8%;
+
+    background: #0D0D0D;
+
+    text-align: center;
+}
+
+.testimonial-card {
+    max-width: 700px;
+
+    margin: 50px auto 0;
+
+    background: #1A1A1A;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    color: #D6D6D6;
+}
+
+.testimonial-card h4 {
+    margin-top: 25px;
+
+    color: #C08B5C;
+}
+
+
+/* =========================================================
+   RESERVE CTA
+========================================================= */
+
+.reserve-cta {
+    padding: 100px 8%;
+
+    background: #111;
+
+    text-align: center;
+}
+
+.reserve-cta h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    color: white;
+
+    margin: 0;
+}
+
+.reserve-cta p {
+    color: #CFCFCF;
+
+    margin: 25px auto;
+
+    max-width: 650px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #090909;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+footer h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #BFBFBF;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 100px 6% 70px;
+
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        padding: 120px 25px 70px;
+
+        gap: 40px;
+
+        background:
+            #0D0D0D
+            url("../images/hero/hero.jpg")
+            center / cover no-repeat;
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+
+    .tagline {
+
+        font-size: 0.8rem;
+
+        padding: 7px 15px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.8rem;
+
+        line-height: 1.15;
+
+        margin-bottom: 20px;
+    }
+
+
+    .hero h1 span {
+
+        display: block;
+
+        margin-top: 5px;
+    }
+
+
+    .hero-description {
+
+        font-size: 1rem;
+
+        line-height: 1.7;
+
+        margin: 0 auto 30px;
+
+        max-width: 500px;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .hero-buttons {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+
+        width: 100%;
+    }
+
+
+    .hero-buttons a {
+
+        width: 85%;
+
+        max-width: 320px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- HERO IMAGE ---------- */
+
+    .hero-right {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+
+    .hero-image {
+
+        width: 85%;
+
+        max-width: 350px;
+    }
+
+
+    /* ---------- FEATURED MENU ---------- */
+
+    .featured-menu {
+
+        padding: 80px 25px;
+    }
+
+
+    .featured-menu .section-title {
+
+        margin-bottom: 40px;
+    }
+
+
+    .section-title p {
+
+        font-size: 0.8rem;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 2.2rem;
+
+        line-height: 1.2;
+    }
+
+
+    /* ---------- MENU GRID ---------- */
+
+    .menu-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    /* ---------- MENU CARD ---------- */
+
+    .menu-card {
+
+        width: 100%;
+    }
+
+
+    .menu-card img {
+
+        width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    background: #222;
+    padding: 15px;
+    box-sizing: border-box;
+    }
+
+
+    /* ---------- WHY US ---------- */
+
+    .why-us {
+
+        padding: 80px 25px;
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .why-card {
+
+        padding: 35px 25px;
+    }
+
+
+    /* ---------- GALLERY ---------- */
+
+    .gallery-preview {
+
+        padding: 80px 25px;
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .gallery-box {
+
+        height: 250px;
+    }
+
+
+    /* ---------- TESTIMONIAL ---------- */
+
+    .testimonials {
+
+        padding: 80px 25px;
+    }
+
+
+    .testimonial-card {
+
+        padding: 30px 20px;
+
+        margin-top: 35px;
+    }
+
+
+    /* ---------- RESERVATION CTA ---------- */
+
+    .reserve-cta {
+
+        padding: 80px 25px;
+    }
+
+
+    .reserve-cta h2 {
+
+        font-size: 2.3rem;
+
+        line-height: 1.2;
+    }
+
+
+    .reserve-cta p {
+
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+
+        padding: 40px 20px;
+    }
+
+
+    footer h3 {
+
+        font-size: 1.7rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero {
+
+        padding: 110px 18px 60px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.4rem;
+    }
+
+
+    .hero-description {
+
+        font-size: 0.95rem;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 2rem;
+    }
+
+
+    .hero-buttons a {
+
+        width: 95%;
+    }
+
+}

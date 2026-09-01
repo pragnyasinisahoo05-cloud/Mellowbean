@@ -1,0 +1,424 @@
+/* =========================================================
+   MELLOW BEAN CAFÉ — MENU PAGE
+========================================================= */
+
+
+/* =========================================================
+   MENU HEADER
+========================================================= */
+
+.menu-header {
+    text-align: center;
+
+    padding: 100px 8% 60px;
+
+    background: #0d0d0d;
+}
+
+
+.menu-header > p:first-child {
+    margin: 0 0 20px;
+
+    color: #c08b5c;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+.menu-header h1 {
+    margin: 20px 0;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 4rem;
+    line-height: 1.15;
+}
+
+
+.menu-header h1 span {
+    display: block;
+
+    color: #c08b5c;
+}
+
+
+.menu-intro {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #ccc;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   MENU SECTION
+========================================================= */
+
+.menu-section {
+    padding: 80px 5%;
+
+    background: #0d0d0d;
+}
+
+
+.menu-section h2 {
+    margin: 0 0 40px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.5rem;
+}
+
+
+/* Small section label */
+
+.section-tag {
+    margin-bottom: 12px;
+
+    color: #c08b5c;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   MENU GRID
+========================================================= */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   MENU CARD
+========================================================= */
+
+.menu-card {
+    overflow: hidden;
+
+    background: #171717;
+
+    border: 1px solid #29231f;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.menu-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #805638;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================================
+   MENU IMAGES
+========================================================= */
+
+.menu-card > img {
+    display: block;
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    /*
+       Normal state:
+       Black & White
+    */
+
+    filter: grayscale(100%);
+
+    transition:
+        filter 0.55s ease,
+        transform 0.55s ease;
+}
+
+
+/*
+   Hover:
+   Bring the colours back
+*/
+
+.menu-card:hover > img {
+    filter: grayscale(0%);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PLACEHOLDER IMAGES
+========================================================= */
+
+.placeholder-image {
+    height: 250px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #252525;
+
+    font-size: 6rem;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+/*
+   Even the placeholder gets a subtle hover effect.
+*/
+
+.menu-card:hover .placeholder-image {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   MENU CARD CONTENT
+========================================================= */
+
+.menu-card h3 {
+    margin: 22px 20px 8px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.4rem;
+}
+
+
+.description,
+.menu-card > p:not(.price) {
+    padding: 0 20px;
+
+    color: #ccc;
+
+    line-height: 1.6;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating {
+    margin: 5px 0 10px;
+
+    color: #c08b5c;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.price {
+    margin: 15px 0;
+
+    color: #c08b5c;
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ORDER BUTTON
+========================================================= */
+
+.menu-card > a {
+    display: inline-block;
+
+    margin: 5px 0 25px;
+
+    padding: 10px 22px;
+
+    background: #805638;
+
+    border-radius: 25px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.menu-card > a:hover {
+    background: #a66b32;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 50px;
+
+    background: #151515;
+
+    color: #aaa;
+
+    text-align: center;
+
+    line-height: 2;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+    .menu-header h1 {
+        font-size: 3.3rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .menu-header {
+        padding: 60px 20px;
+    }
+
+
+    .menu-header h1 {
+        font-size: 2.6rem;
+
+        line-height: 1.15;
+    }
+
+
+    .menu-intro {
+        font-size: 0.95rem;
+
+        line-height: 1.6;
+    }
+
+
+    .menu-section {
+        padding: 55px 20px;
+    }
+
+
+    .menu-section h2 {
+        font-size: 2.2rem;
+
+        margin-bottom: 30px;
+    }
+
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .menu-card > img,
+    .placeholder-image {
+        height: 240px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .menu-header h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .menu-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .menu-card > img,
+    .placeholder-image {
+        height: 220px;
+    }
+
+}

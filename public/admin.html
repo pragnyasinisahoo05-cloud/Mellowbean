@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Mellow Bean Café</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     ADMIN HEADER
+========================= -->
+<header class="admin-header">
+
+    <div class="admin-heading">
+
+        <h1>
+            Mellow Bean <span>Admin</span>
+        </h1>
+
+        <p>
+            Reservation Management Dashboard
+        </p>
+
+    </div>
+
+    <button
+        id="logoutBtn"
+        class="logout-btn">
+        Logout
+    </button>
+
+</header>
+
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="admin-container">
+
+
+    <!-- TITLE -->
+
+    <div class="admin-title">
+
+        <h2>
+            Reservations
+        </h2>
+
+        <p>
+            Manage your café reservations from here.
+        </p>
+
+    </div>
+<!-- =========================
+     DASHBOARD STATS
+========================= -->
+
+<div class="stats-container">
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            ☕
+        </div>
+
+        <div>
+            <p>Total Reservations</p>
+            <h3 id="totalReservations">0</h3>
+        </div>
+
+    </div>
+    <!-- =========================
+     TODAY'S RESERVATIONS
+========================= -->
+
+<div class="today-section">
+
+    <div class="today-header">
+
+        <div>
+            <p class="section-tag">TODAY</p>
+
+            <h2>
+                Today's Reservations
+            </h2>
+        </div>
+
+        <span id="todayDate"></span>
+
+    </div>
+
+
+    <div
+        id="todayReservations"
+        class="today-reservations">
+
+        <p class="today-empty">
+            No reservations for today.
+        </p>
+
+    </div>
+
+</div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            ⏳
+        </div>
+
+        <div>
+            <p>Pending</p>
+            <h3 id="pendingReservations">0</h3>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            ✓
+        </div>
+
+        <div>
+            <p>Confirmed</p>
+            <h3 id="confirmedReservations">0</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     RESERVATION FILTERS
+========================= -->
+
+<div class="reservation-filters">
+
+    <div class="search-box">
+
+        <span>🔎</span>
+
+        <input
+            type="text"
+            id="searchReservations"
+            placeholder="Search by name or phone...">
+
+    </div>
+
+
+    <select id="statusFilter">
+
+        <option value="all">
+            All Statuses
+        </option>
+
+        <option value="Pending">
+            Pending
+        </option>
+
+        <option value="Confirmed">
+            Confirmed
+        </option>
+
+    </select>
+
+
+    <select id="dateFilter">
+
+        <option value="all">
+            All Dates
+        </option>
+
+        <option value="today">
+            Today
+        </option>
+
+        <option value="tomorrow">
+            Tomorrow
+        </option>
+
+        <option value="custom">
+            Custom Date
+        </option>
+
+    </select>
+
+
+    <input
+        type="date"
+        id="customDate"
+        class="custom-date"
+        style="display: none;">
+
+</div>
+
+    <!-- =========================
+         RESERVATION TABLE
+    ========================= -->
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Phone</th>
+
+                    <th>Date</th>
+
+                    <th>Time</th>
+
+                    <th>Guests</th>
+
+                    <th>Message</th>
+
+                    <th>Status</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="reservationTable">
+
+                <tr>
+
+                    <td colspan="9">
+                        Loading reservations...
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</main>
+
+
+
+<script>
+
+    async function checkAdminAccess() {
+
+        try {
+
+            const response = await fetch("/api/check-auth");
+
+            if (!response.ok) {
+
+                window.location.href = "login.html";
+
+                return;
+
+            }
+
+            const data = await response.json();
+
+            if (!data.authenticated) {
+
+                window.location.href = "login.html";
+
+                return;
+
+            }
+
+            // User is authenticated.
+            // Now load the admin dashboard.
+            const script = document.createElement("script");
+
+            script.src = "js/admin.js";
+
+            document.body.appendChild(script);
+
+        } catch (error) {
+
+            console.error("Authentication check failed:", error);
+
+            window.location.href = "login.html";
+
+        }
+
+    }
+
+    checkAdminAccess();
+
+</script>
+
+</body>
+
+</html>

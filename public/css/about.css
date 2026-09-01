@@ -1,0 +1,237 @@
+/* =========================
+   ABOUT HEADER
+========================= */
+
+.about-header {
+    text-align: center;
+    padding: 100px 8% 70px;
+}
+
+.about-header > p:first-child {
+    color: #a66b32;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: white;
+    margin: 20px 0;
+}
+
+.about-header h1 span {
+    color: #a66b32;
+}
+
+.about-intro {
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   OUR STORY
+========================= */
+
+.story-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+
+    padding: 70px 8%;
+}
+
+.story-content {
+    text-align: left;
+}
+
+.section-tag {
+    color: #a66b32;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.story-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: white;
+    margin: 15px 0 25px;
+}
+
+.story-content h2 span {
+    color: #a66b32;
+}
+
+.story-content p:not(.section-tag) {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* STORY BOX */
+
+.story-box {
+    background: #222;
+    border-radius: 25px;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.story-box div {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.story-box h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.story-box p {
+    color: #ccc;
+}
+
+
+/* =========================
+   VALUES
+========================= */
+
+.values-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title p {
+    color: #a66b32;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: white;
+    margin: 15px 0 50px;
+}
+
+.section-title h2 span {
+    color: #a66b32;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background: #1b1b1b;
+    padding: 40px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+    text-align: center;
+    padding: 90px 8%;
+    background: #1b1b1b;
+}
+
+.about-cta h2 {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 3rem;
+}
+
+.about-cta p {
+    color: #ccc;
+    margin: 15px 0 30px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .about-header {
+        padding: 70px 5% 50px;
+    }
+
+    .about-header h1 {
+        font-size: 2.7rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .story-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 5%;
+    }
+
+    .story-content {
+        text-align: center;
+    }
+
+    .story-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .story-box {
+        padding: 50px 20px;
+    }
+
+    .values-section {
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 2.4rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-cta {
+        padding: 70px 5%;
+    }
+
+    .about-cta h2 {
+        font-size: 2.4rem;
+    }
+
+}

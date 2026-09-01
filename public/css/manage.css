@@ -1,0 +1,494 @@
+/* =========================
+   MANAGE PAGE OVERRIDES
+========================= */
+
+body {
+    display: block;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* =========================
+   MANAGE PAGE
+========================= */
+
+body {
+    display: block;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.manage-header {
+    text-align: center;
+    padding: 90px 20px 55px;
+}
+
+.manage-header .section-tag {
+    color: #b87832;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.manage-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 15px 0;
+    color: white;
+}
+
+.manage-header h1 span {
+    color: #b87832;
+}
+
+.manage-header > p:last-child {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: #aaa;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+.manage-section {
+    width: 100%;
+    padding: 20px 20px 100px;
+}
+
+.manage-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   VERIFICATION CARD
+========================= */
+
+.verification-card {
+    width: 100%;
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.verification-card h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.card-description {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 16px;
+
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    color: white;
+    -webkit-text-fill-color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #777;
+    -webkit-text-fill-color: #777;
+}
+
+.form-group input:focus {
+    border-color: #b87832;
+    box-shadow: 0 0 0 2px rgba(184, 120, 50, 0.1);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 7px;
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.manage-btn {
+    display: block;
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #b87832;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.manage-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.manage-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.manage-error {
+    display: none;
+
+    margin-top: 20px;
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: rgba(180, 50, 50, 0.12);
+    border: 1px solid rgba(180, 50, 50, 0.35);
+
+    color: #ff8f8f;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESERVATION CARD
+========================= */
+
+.reservation-card {
+    display: none;
+
+    width: 100%;
+
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 24px;
+
+    padding: 45px;
+}
+
+
+/* =========================
+   RESERVATION HEADER
+========================= */
+
+.reservation-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.reservation-card-header h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin: 8px 0 0;
+    color: white;
+}
+
+.booking-id {
+    flex-shrink: 0;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    background: rgba(184, 120, 50, 0.15);
+    color: #d49a5b;
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.reservation-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 18px;
+    margin-bottom: 25px;
+
+    background: #0d0d0d;
+    border-radius: 12px;
+}
+
+.reservation-status span {
+    color: #999;
+    font-size: 13px;
+}
+
+.reservation-status strong {
+    color: #d49a5b;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.reservation-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.detail-item {
+    min-width: 0;
+
+    padding: 18px;
+
+    background: #0d0d0d;
+    border-radius: 12px;
+}
+
+.detail-item span {
+    display: block;
+
+    color: #777;
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+.detail-item strong {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    word-break: break-word;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.reservation-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.action-btn {
+    padding: 14px;
+
+    border-radius: 25px;
+    border: 1px solid #b87832;
+
+    background: #b87832;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.cancel-btn {
+    background: transparent;
+    color: #d78383;
+    border-color: #633838;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+    display: block;
+
+    margin: 25px auto 0;
+
+    border: none;
+    background: transparent;
+
+    color: #888;
+
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.back-btn:hover {
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .manage-container {
+        max-width: 700px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .manage-header {
+        padding: 70px 20px 40px;
+    }
+
+    .manage-header h1 {
+        font-size: 38px;
+    }
+
+    .manage-header > p:last-child {
+        font-size: 14px;
+    }
+
+    .manage-section {
+        padding: 20px 15px 70px;
+    }
+
+    .verification-card,
+    .reservation-card {
+        padding: 28px 20px;
+        border-radius: 18px;
+    }
+
+    .verification-card h2,
+    .reservation-card-header h2 {
+        font-size: 27px;
+    }
+
+    .reservation-details {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .reservation-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-card-header {
+        flex-direction: column;
+    }
+
+    .booking-id {
+        align-self: flex-start;
+    }
+
+}

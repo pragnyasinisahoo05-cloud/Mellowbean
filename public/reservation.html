@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservation | Mellow Bean Café</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Reservation CSS -->
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ☕ <span>Mellow Bean</span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="reservation.html">Reservation</a></li>
+
+            <li>
+    <a href="manage.html">
+       Already have a reservation? Manage it here.
+    </a>
+</li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <a href="reservation.html" class="reserve-btn">
+            Reserve Table
+        </a>
+
+        <button class="menu-toggle"
+            onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- RESERVATION HEADER -->
+
+    <section class="reservation-header">
+
+        <p>RESERVE YOUR TABLE</p>
+
+        <h1>
+            Your Table,
+            <span>Your Moment</span>
+        </h1>
+
+        <p class="reservation-intro">
+            Planning a coffee date, catching up with friends,
+            or simply need a cozy corner?
+            Reserve your table at Mellow Bean.
+        </p>
+
+    </section>
+
+
+    <!-- RESERVATION FORM -->
+
+    <section class="reservation-section">
+
+        <div class="reservation-container">
+
+            <div class="reservation-info">
+
+                <p class="section-tag">
+                    COME, STAY A WHILE
+                </p>
+
+                <h2>
+                    Let's Save You
+                    <span>A Seat.</span>
+                </h2>
+
+                <p>
+                    Fill in the details and we'll have your table
+                    ready when you arrive.
+                </p>
+
+                <div class="info-item">
+                    ☕
+                    <div>
+                        <h3>Cozy Atmosphere</h3>
+                        <p>Perfect for coffee, conversations and work.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    🥐
+                    <div>
+                        <h3>Freshly Prepared</h3>
+                        <p>Enjoy coffee and freshly baked treats.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    ❤️
+                    <div>
+                        <h3>Made With Love</h3>
+                        <p>Every visit deserves a little something special.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form class="reservation-form"  id="reservationForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                          type="tel" 
+    id="phone" 
+    name="phone" 
+    placeholder="Enter your 10-digit phone number"
+    inputmode="numeric"
+    maxlength="10"
+    pattern="[0-9]{10}"
+    autocomplete="tel"
+    required> 
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required>
+
+                    </div>
+
+
+                    
+
+                <div class="form-group">
+
+    <label for="time">
+        Time
+    </label>
+
+    <input
+        type="time"
+        id="time"
+        name="time"
+        min="08:00"
+        max="22:00"
+        required>
+
+    <p class="availability-message" id="availabilityMessage"></p>
+
+</div>
+
+
+                <div class="form-group">
+
+                    <label for="guests">
+                        Number of Guests
+                    </label>
+
+                    <select id="guests" name="guests" required>
+
+                        <option value="">
+                            Select number of guests
+                        </option>
+
+                        <option value="1">
+                            1 Guest
+                        </option>
+
+                        <option value="2">
+                            2 Guests
+                        </option>
+
+                        <option value="3">
+                            3 Guests
+                        </option>
+
+                        <option value="4">
+                            4 Guests
+                        </option>
+
+                        <option value="5">
+                            5 Guests
+                        </option>
+
+                        <option value="6">
+                            6 Guests
+                        </option>
+
+                        <option value="7">
+                            7 Guests
+                        </option>
+
+                        <option value="8">
+                            8 Guests
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Special Request
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Any special requests?"></textarea>
+
+                </div>
+
+
+                <button type="submit" class="reservation-btn">
+                    Reserve My Table
+                </button>
+
+            </form>
+
+           <div class="success-message" id="reservationSuccess">
+
+    <h3>☕ Reservation Confirmed!</h3>
+
+    <p>Your table has been reserved successfully.</p>
+
+    <div class="booking-details">
+
+    <p>
+        <strong>Booking ID:</strong>
+        <span id="confirmedBookingId"></span>
+    </p>
+
+    <p>
+        <strong>Name:</strong>
+        <span id="confirmedName"></span>
+    </p>
+
+    <p>
+        <strong>Date:</strong>
+        <span id="confirmedDate"></span>
+    </p>
+
+    <p>
+        <strong>Time:</strong>
+        <span id="confirmedTime"></span>
+    </p>
+
+    <p>
+        <strong>Guests:</strong>
+        <span id="confirmedGuests"></span>
+    </p>
+
+</div>
+    <p>
+        We look forward to seeing you at Mellow Bean Café ❤️
+    </p>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <!-- CUSTOM ERROR POPUP -->
+
+<div class="custom-popup" id="errorPopup">
+
+    <div class="popup-box">
+
+        <div class="popup-icon">
+            ⚠
+        </div>
+
+        <h3>Something Went Wrong</h3>
+
+        <p id="errorMessage">
+            Unable to connect to the server. Please try again.
+        </p>
+
+        <button onclick="closeErrorPopup()">
+            Okay
+        </button>
+
+    </div>
+
+</div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Mellow Bean Café</h3>
+
+        <p>
+            Crafted with ❤️ and Coffee.
+        </p>
+
+        <p>
+            © 2026 Mellow Bean Café
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+<script src="js/reservation.js"></script>
+</body>
+
+</html>

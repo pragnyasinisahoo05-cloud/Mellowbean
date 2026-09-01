@@ -1,0 +1,355 @@
+/* =========================
+   CONTACT HEADER
+========================= */
+
+.contact-header {
+    text-align: center;
+    padding: 100px 8% 70px;
+}
+
+.contact-header > p:first-child {
+    color: #a66b32;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.contact-header h1 span {
+    color: #a66b32;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: auto;
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 40px 8% 100px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 70px;
+}
+
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info {
+    color: white;
+}
+
+.section-tag {
+    color: #a66b32;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 span {
+    color: #a66b32;
+}
+
+.contact-description {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CONTACT ITEMS
+========================= */
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+
+    background: #1b1b1b;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+
+    border-radius: 15px;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.contact-item h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #ccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    background: #1b1b1b;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.contact-form h2 {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #444;
+
+    border-radius: 10px;
+
+    background: #252525;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #a66b32;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-btn {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #805638;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contact-btn:hover {
+    background: #a66b32;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-section {
+    padding: 0 8% 100px;
+}
+
+.map-box {
+
+    max-width: 1200px;
+
+    height: 350px;
+
+    margin: auto;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            rgba(27,27,27,.92),
+            rgba(27,27,27,.92)
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.map-content {
+    color: white;
+}
+
+.map-pin {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.map-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.map-content p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.map-btn {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #805638;
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.map-btn:hover {
+    background: #a66b32;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contact-header h1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .contact-header {
+        padding: 70px 5% 50px;
+    }
+
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-intro {
+        font-size: 1rem;
+    }
+
+    .contact-section {
+        padding: 30px 5% 70px;
+    }
+
+    .contact-info h2 {
+        font-size: 2.3rem;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.7rem;
+    }
+
+    .map-section {
+        padding: 0 5% 70px;
+    }
+
+    .map-box {
+        height: 300px;
+    }
+
+}

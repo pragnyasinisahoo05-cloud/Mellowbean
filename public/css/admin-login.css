@@ -1,0 +1,321 @@
+/* =========================
+   ADMIN LOGIN
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #241b16 0%,
+            #0d0d0d 55%
+        );
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 430px;
+
+    padding: 45px 40px;
+
+    background: #151515;
+
+    border: 1px solid #30251f;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.login-logo {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #241b16;
+
+    border: 1px solid #6F4E37;
+
+    font-size: 1.8rem;
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.login-tag {
+
+    margin: 0 0 10px;
+
+    color: #C08B5C;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.login-card h1 {
+
+    margin: 0 0 12px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.7rem;
+}
+
+.login-card h1 span {
+
+    color: #C08B5C;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.login-subtitle {
+
+    margin: 0 0 30px;
+
+    color: #999;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ddd;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #3A3A3A;
+
+    border-radius: 12px;
+
+    background: #202020;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.form-group input::placeholder {
+
+    color: #777;
+}
+
+
+.form-group input:focus {
+
+    border-color: #A66B32;
+
+    box-shadow:
+        0 0 0 3px rgba(166, 107, 50, 0.12);
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #6F4E37;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-btn:hover {
+
+    background: #C08B5C;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(192, 139, 92, 0.2);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.login-message {
+
+    min-height: 20px;
+
+    margin: 15px 0 0;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   BACK HOME
+========================= */
+
+.back-home {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #999;
+
+    text-decoration: none;
+
+    font-size: 0.8rem;
+
+    transition: 0.3s;
+}
+
+
+.back-home:hover {
+
+    color: #C08B5C;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .login-page {
+
+        padding: 20px;
+    }
+
+    .login-card {
+
+        padding: 35px 25px;
+
+        border-radius: 20px;
+    }
+
+    .login-card h1 {
+
+        font-size: 2.3rem;
+    }
+
+}
