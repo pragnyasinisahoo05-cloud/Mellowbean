@@ -32,9 +32,10 @@ const LAST_START_MINUTES = 20 * 60 + 30;  // 8:30 PM
 // =====================================================
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
 
@@ -141,7 +142,7 @@ const availabilityRateLimit = rateLimit({
 // SERVE FRONTEND
 // =====================================================
 
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 
 // =====================================================
